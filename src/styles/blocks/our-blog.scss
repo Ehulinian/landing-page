@@ -1,0 +1,109 @@
+.our-blog {
+  .our-blog_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 103px;
+    gap: 55px;
+    height: 100%;
+    text-align: center;
+    min-height: auto;
+
+    @include on-tablet {
+      padding-top: 151px;
+      padding-bottom: 154px;
+    }
+
+    @include on-desktop {
+      padding-bottom: 190px;
+    }
+  }
+
+  &_icon-wrapper {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(
+      135deg,
+      $gradientButtonFirst,
+      $gradientButtonSecond
+    );
+    border-radius: 50% / 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .section-title_blog {
+    font-size: 24px;
+    color: $textColor;
+    line-height: 50px;
+  }
+
+  .section-title_blog span {
+    font-size: 2rem;
+  }
+
+  .larger-text {
+    font-size: 1.5rem;
+  }
+
+  .our-blog_video {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../assets/images/portrait-shirtless-strong-muscular-guy-grey-background.svg");
+    background-repeat: no-repeat;
+    background-position: 240% 200%;
+    background-size: contain;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 20px rgba(247, 8, 76, 0.5);
+
+    @include on-tablet {
+      width: 600px;
+      height: 500px;
+      background-size: 90% 100%;
+    }
+
+    @include on-desktop {
+      width: 1000px;
+      height: 500px;
+      background-image: url("../assets/images/portrait-shirtless-strong-muscular-guy-grey-background.svg");
+      background-position: 250px;
+      // background-repeat: no-repeat;
+      background-size: 110% 100%;
+      border-radius: 20px;
+
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 30px 20px #f7084c80;
+    }
+  }
+
+  .our-blog_video span {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 900;
+    color: #030d19;
+    -webkit-text-stroke: 0.5px #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    @include on-tablet {
+      font-size: 36px;
+      line-height: 1.5;
+    }
+
+    @include on-desktop {
+      font-size: 70px;
+    }
+  }
+}

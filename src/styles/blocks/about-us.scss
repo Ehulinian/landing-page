@@ -1,0 +1,57 @@
+.about-us {
+  background-image: url("../assets/images/shirtless-athletic-male-doing-biceps-workouts-with-one-dumbbell-grey-vignette-background\ 1.svg");
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    @include on-tablet {
+      align-items: center;
+      gap: 71px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 65px;
+
+    @include on-desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 200px);
+      row-gap: 61px;
+      column-gap: 200px;
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+  }
+
+  &__wrapper-icon {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    @include on-tablet {
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin: 0px;
+  }
+
+  &__description {
+    font-size: 16px;
+    margin: 0px;
+  }
+}

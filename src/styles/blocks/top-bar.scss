@@ -1,0 +1,124 @@
+.top-bar {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 82px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__header-button {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.6px;
+    cursor: pointer;
+    width: 231.7px;
+    height: 50px;
+    display: none;
+    margin-bottom: 14px;
+    position: relative;
+    border-radius: 10px;
+    border-color: $gradientButtonFirst;
+    background: linear-gradient(
+      90deg,
+      $gradientButtonFirst 0%,
+      $gradientButtonSecond 100%
+    );
+    color: #fff;
+    display: block;
+
+    @include hover(transform, scale(1.1));
+
+    @include on-tablet {
+      display: none;
+      margin: 0;
+    }
+
+    @include on-desktop {
+      justify-content: space-around;
+      align-items: center;
+      display: inline-flex;
+      margin: 0;
+    }
+  }
+
+  @include on-tablet {
+    padding-block: 36px;
+  }
+
+  &__nav {
+    display: none;
+
+    @include on-tablet {
+      display: block;
+    }
+  }
+
+  &__logo {
+    width: 153px;
+    height: 68px;
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    transition: transform $effectDuration;
+
+    @include hover(transform, scale(1.2));
+
+    @include on-tablet {
+      width: 146px;
+      height: 60px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+
+    @include on-tablet {
+      align-items: center;
+    }
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      gap: 24px;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      padding-left: 0;
+
+      &--footer {
+        margin: 0;
+        padding-left: 0;
+        gap: 16px;
+        align-items: baseline;
+      }
+    }
+
+    &__link {
+      color: $textColor;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.16px;
+      cursor: pointer;
+      width: max-content;
+      transition: transform $effectDuration;
+      display: flex;
+
+      &:hover {
+        transform: scale(1.2);
+        color: $gradientButtonFirst;
+      }
+    }
+  }
+}

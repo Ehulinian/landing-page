@@ -1,0 +1,288 @@
+.icon {
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &-text {
+    font-size: 15px;
+    width: max-content;
+  }
+
+  &--success-on-phone {
+    display: block;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+
+    background-image: url("../assets/icons/Icon-success.svg");
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      background: #a90a3d;
+      filter: blur(10px);
+      box-shadow: 0 0 10px 5px #a90a3d;
+      z-index: -1;
+    }
+
+    @include on-tablet {
+      display: none;
+    }
+
+    @include on-desktop {
+      display: none;
+    }
+  }
+
+  &-with-text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding-bottom: 16px;
+    align-items: center;
+
+    @include on-tablet {
+      padding-bottom: 0;
+    }
+  }
+
+  &--play {
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icons/Icon-play.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    transition: transform 0.3s ease;
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &--menu {
+    background-image: url("../assets/icons/Icon-burger-menu.svg");
+
+    @include on-tablet {
+      display: none;
+    }
+
+    @include on-desktop {
+      display: none;
+    }
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &--dumbell {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    background-size: contain;
+    background-image: url("../assets/icons/Icon-dumbell.svg");
+    display: none;
+
+    @include on-tablet {
+      width: 150px;
+      height: 50px;
+      display: block;
+    }
+
+    @include on-desktop {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      background: #a90a3d;
+      filter: blur(10px);
+      box-shadow: 0 0 10px 5px #a90a3d;
+      z-index: -1;
+    }
+  }
+
+  &--human {
+    width: 100px;
+    height: 41px;
+    position: relative;
+    background-size: contain;
+    background-image: url("../assets/icons/Icon-human.svg");
+    display: none;
+
+    @include on-tablet {
+      width: 150px;
+      height: 50px;
+      display: block;
+    }
+
+    @include on-desktop {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      background: #a90a3d;
+      filter: blur(10px);
+      box-shadow: 0 0 10px 5px #a90a3d;
+      z-index: -1;
+    }
+  }
+
+  &--power {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: none;
+    background-image: url("../assets/icons/Icon-power.svg");
+
+    @include on-tablet {
+      width: 150px;
+      height: 50px;
+      display: block;
+    }
+
+    @include on-desktop {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      background: #a90a3d;
+      filter: blur(10px);
+      box-shadow: 0 0 10px 5px #a90a3d;
+      z-index: -1;
+    }
+  }
+
+  &--balls {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: none;
+    background-image: url("../assets/icons/Icon-ball.svg");
+
+    @include on-tablet {
+      width: 150px;
+      height: 50px;
+      display: block;
+    }
+
+    @include on-desktop {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      background: #a90a3d;
+      filter: blur(10px);
+      box-shadow: 0 0 10px 5px #a90a3d;
+      z-index: -1;
+    }
+  }
+
+  &--target {
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    background-image: url("../assets/icons/Icon-target.svg");
+    @include hover(transform, scale(1.2));
+  }
+
+  &--close {
+    background-image: url("../assets/icons/Icon-close.svg");
+    @include hover(transform, scale(1.2));
+  }
+
+  &--success {
+    display: none;
+    width: 20px;
+    height: 15px;
+
+    @include on-tablet {
+      position: relative;
+      display: inline-block;
+      width: 174px;
+      height: 37px;
+      background-image: url("../assets/icons/Icon-success.svg");
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border-radius: 50%;
+        background: #a90a3d;
+        filter: blur(10px);
+        box-shadow: 0 0 10px 5px #a90a3d;
+        z-index: -1;
+      }
+    }
+  }
+
+  &--phone {
+    background-image: url("../assets/icons/Icon-phone-call.svg");
+    width: 33px;
+    height: 33px;
+    @include hover(transform, scale(1.2));
+  }
+
+  &--clock {
+    background-image: url("../assets/icons/Icon-clock.svg");
+    width: 36px;
+    height: 36px;
+    @include hover(transform, scale(1.2));
+  }
+
+  &--geolocation {
+    background-image: url("../assets/icons/Icon-geo.svg");
+    width: 25px;
+    height: 36px;
+    @include hover(transform, scale(1.2));
+  }
+}
+
+.frame {
+  display: flex;
+
+  height: 63px;
+  width: 63px;
+  background-image: url("../assets/frames/frame.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+}

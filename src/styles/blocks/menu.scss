@@ -1,0 +1,19 @@
+.menu {
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: $textColor;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $pageColor;
+
+  &__nav {
+    margin-bottom: 40px;
+  }
+
+  &__top {
+    @include on-tablet {
+      margin-bottom: 0;
+    }
+  }
+}

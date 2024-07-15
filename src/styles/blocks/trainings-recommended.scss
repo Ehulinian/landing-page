@@ -1,0 +1,66 @@
+.recommended {
+  background-image: url("../assets/images/woman-holding-weights-near-barbells.svg");
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+
+  @include on-tablet {
+    background-position: bottom right;
+    background-size: auto;
+  }
+
+  @include on-desktop {
+    background-position: top right;
+  }
+
+  &__trainings {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 65px;
+    padding-bottom: 132px;
+
+    @include on-tablet {
+      gap: 189px;
+    }
+
+    @include on-desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      padding-bottom: 202px;
+    }
+  }
+
+  &__training {
+    display: flex;
+    align-items: center;
+    gap: 71px;
+  }
+
+  .training__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include on-tablet {
+      gap: 11px;
+    }
+  }
+
+  .training__title {
+    font-size: 24px;
+    line-height: 40px;
+
+    @include on-tablet {
+      font-size: 40px;
+    }
+  }
+
+  .training__title {
+    margin: 0px;
+  }
+
+  .training__description {
+    margin: 0px;
+  }
+}
