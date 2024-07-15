@@ -1,4 +1,9 @@
 .header {
+  background-image: url("../assets/frames/Ellipse\ 5.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @include on-tablet {
     background-image: url("../assets/images/guy-boxing-stance-dark-room.svg");
     background-repeat: no-repeat;

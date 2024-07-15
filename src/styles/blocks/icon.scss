@@ -89,12 +89,14 @@
     display: none;
 
     @include on-tablet {
+      width: 100px;
+
       height: 50px;
       display: block;
     }
 
     @include on-desktop {
-      width: 150px;
+      width: 100%;
       display: block;
     }
 
@@ -121,11 +123,14 @@
     display: none;
 
     @include on-tablet {
+      width: 100px;
+
       display: block;
     }
 
     @include on-desktop {
-      width: 150px;
+      width: 100%;
+
       display: block;
     }
 
@@ -151,11 +156,14 @@
     background-image: url("../assets/icons/Icon-power.svg");
 
     @include on-tablet {
+      width: 100px;
+
       display: block;
     }
 
     @include on-desktop {
-      width: 150px;
+      width: 100%;
+
       display: block;
     }
 
@@ -181,11 +189,13 @@
     background-image: url("../assets/icons/Icon-ball.svg");
 
     @include on-tablet {
+      width: 100px;
       display: block;
     }
 
     @include on-desktop {
-      width: 150px;
+      width: 100%;
+
       display: block;
     }
 
