@@ -85,6 +85,10 @@
     @include on-tablet {
       padding-bottom: 167px;
     }
+
+    @include on-desktop {
+      padding-bottom: 191px;
+    }
   }
 
   &__title {
@@ -112,10 +116,6 @@
   &__bottom {
     width: 100%;
     height: 100%;
-
-    @include on-desktop {
-      padding-bottom: 191px;
-    }
   }
 
   br {
