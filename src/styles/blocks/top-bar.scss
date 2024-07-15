@@ -70,6 +70,11 @@
       width: 146px;
       height: 60px;
     }
+
+    @include on-desktop {
+      width: 146px;
+      height: 60px;
+    }
   }
 
   &__list {
