@@ -6,15 +6,15 @@
 
   @include on-tablet {
     background-image: url("../assets/images/guy-boxing-stance-dark-room.svg");
+    background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 80% 70%;
-
-    background-position: right;
+    background-size: 80% 100%;
   }
 
   @include on-desktop {
-    background-position: 100% 100%;
-    background-size: 1200px 800px;
+    background-image: url("../assets/images/guy-boxing-stance-dark-room\ 1.svg");
+    background-position: 116% 76%;
+    background-size: 75% 62%;
   }
 
   &__content {
