@@ -21,7 +21,23 @@
     display: flex;
     flex-direction: column;
 
+    @include on-tablet {
+      background-image: url("../assets/frames/Ellipse\ 5.svg");
+      background-position: 70% 90%;
+      background-repeat: no-repeat;
+      background-size: 80% 80%;
+      position: relative;
+
+      width: fit-content;
+    }
+
     @include on-desktop {
+      background-image: url("../assets/frames/Ellipse\ 5.svg");
+      background-position: 70% 150%;
+      background-repeat: no-repeat;
+      background-size: 80% 80%;
+      position: relative;
+
       width: fit-content;
     }
   }
