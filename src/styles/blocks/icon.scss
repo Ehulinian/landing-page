@@ -82,7 +82,6 @@
   }
 
   &--dumbell {
-    width: 100px;
     height: 50px;
     position: relative;
     background-size: contain;
@@ -90,12 +89,12 @@
     display: none;
 
     @include on-tablet {
-      width: 150px;
       height: 50px;
       display: block;
     }
 
     @include on-desktop {
+      width: 150px;
       display: block;
     }
 
@@ -115,7 +114,6 @@
   }
 
   &--human {
-    width: 100px;
     height: 41px;
     position: relative;
     background-size: contain;
@@ -123,12 +121,11 @@
     display: none;
 
     @include on-tablet {
-      width: 150px;
-      height: 50px;
       display: block;
     }
 
     @include on-desktop {
+      width: 150px;
       display: block;
     }
 
@@ -148,19 +145,17 @@
   }
 
   &--power {
-    width: 100px;
     height: 50px;
     position: relative;
     display: none;
     background-image: url("../assets/icons/Icon-power.svg");
 
     @include on-tablet {
-      width: 150px;
-      height: 50px;
       display: block;
     }
 
     @include on-desktop {
+      width: 150px;
       display: block;
     }
 
@@ -180,19 +175,17 @@
   }
 
   &--balls {
-    width: 100px;
     height: 50px;
     position: relative;
     display: none;
     background-image: url("../assets/icons/Icon-ball.svg");
 
     @include on-tablet {
-      width: 150px;
-      height: 50px;
       display: block;
     }
 
     @include on-desktop {
+      width: 150px;
       display: block;
     }
 
