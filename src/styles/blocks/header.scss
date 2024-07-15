@@ -3,45 +3,24 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-
   @include on-tablet {
     background-image: url("../assets/images/guy-boxing-stance-dark-room.svg");
     background-position: 100% 80%;
     background-repeat: no-repeat;
     background-size: 84% 84%;
   }
-
   @include on-desktop {
     background-image: url("../assets/images/guy-boxing-stance-dark-room\ 1.svg");
     background-position: 85% 100%;
     background-size: 70% 75%;
   }
-
   &__content {
     display: flex;
     flex-direction: column;
-
-    @include on-tablet {
-      background-image: url("../assets/frames/Ellipse\ 5.svg");
-      background-position: 70% 90%;
-      background-repeat: no-repeat;
-      background-size: 80% 80%;
-      position: relative;
-
-      width: fit-content;
-    }
-
     @include on-desktop {
-      background-image: url("../assets/frames/Ellipse\ 5.svg");
-      background-position: 70% 150%;
-      background-repeat: no-repeat;
-      background-size: 80% 80%;
-      position: relative;
-
       width: fit-content;
     }
   }
-
   &__button {
     font-family: Montserrat, sans-serif;
     font-size: 20px;
@@ -62,42 +41,33 @@
     );
     color: #fff;
     display: block;
-
     @include hover(transform, scale(1.1));
   }
-
   &__icons {
     display: flex;
-
     align-items: flex-start;
     flex-direction: column;
     overflow: hidden;
-
     @include on-tablet {
       flex-direction: row;
       align-items: center;
       gap: 49px;
       justify-content: end;
       overflow: hidden;
-
       width: 100%;
     }
-
     @include on-desktop {
       justify-content: space-around;
     }
   }
-
   .headerBr {
     display: block;
   }
-
   &__text {
     margin: 0;
     text-align: start;
     font-size: 16px;
     padding-bottom: 29px;
-
     @include on-tablet {
       padding-bottom: 167px;
     }
@@ -116,19 +86,16 @@
     font-weight: 500;
     line-height: 40px;
     padding-bottom: 14px;
-
     @include on-tablet {
       padding-top: 130px;
       line-height: 100%;
     }
-
     @include on-desktop {
       font-size: 80px;
       line-height: 100%;
       padding-top: 135px;
     }
   }
-
   &__bottom {
     width: 100%;
     height: 100%;
@@ -138,19 +105,16 @@
     @include on-tablet {
       display: contents;
     }
-
     @include on-desktop {
       display: none;
     }
   }
-
   .wrapper {
     @include on-tablet {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: start;
-
       @include on-desktop {
         display: flex;
         flex-direction: column;
@@ -159,13 +123,11 @@
       }
     }
   }
-
   .wrapper__text-button {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   &__description {
     width: auto;
     height: auto;
@@ -176,12 +138,10 @@
     font-size: 15px;
     line-height: 25.6px;
     text-align: left;
-
     @include on-tablet {
       font-size: 20px;
       padding-bottom: 151px;
     }
-
     @include on-desktop {
       font-size: 20px;
       padding-bottom: 51px;
