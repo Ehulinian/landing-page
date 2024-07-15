@@ -9,6 +9,10 @@
   &-text {
     font-size: 15px;
     width: max-content;
+
+    .icon-text_br {
+      display: block;
+    }
   }
 
   &--success-on-phone {
