@@ -5,9 +5,9 @@
   background-size: cover;
   @include on-tablet {
     background-image: url("../assets/images/guy-boxing-stance-dark-room.svg");
-    background-position: 100% 80%;
+    background-position: 100% 70%;
     background-repeat: no-repeat;
-    background-size: 84% 84%;
+    background-size: 80% 70%;
   }
   @include on-desktop {
     background-image: url("../assets/images/guy-boxing-stance-dark-room\ 1.svg");
